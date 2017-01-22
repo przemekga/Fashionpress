@@ -1,0 +1,88 @@
+.slider {
+  height: 790px;
+  background-image: url('../images/Vector-Smart-Object.jpg');
+  background-size: cover;
+
+  .arr {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.10);
+    margin-top: 16%;
+    border: none;
+    color: #ffffff;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.20);
+    }
+  }
+
+  .arr-left {
+    float: left;
+  }
+
+  .arr-right {
+    float: right;
+  }
+
+  .slider-track {
+    margin: 0 auto;
+    width: 69.05%;
+    color: #ffffff;
+    font-family: "Open Sans Light";
+
+    .slider-text {
+      width: 40.18%;
+      margin-top: 15%;
+      display: inline-block;
+      h1 {
+        font-size: 5.236rem;
+        margin-top: 0;
+      }
+      p {
+        font-size: 1.68rem;
+      }
+    }
+
+    .slider-image {
+      position: relative;
+      float: right;
+      margin-top: 2.5%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .slider-price {
+        height: 18.2rem;
+        width: 18.2rem;
+        line-height: 18.2rem;
+        position: absolute;
+        right: -6%;
+        bottom: 10%;
+        z-index: 1000;
+        background-image: url("../images/Layer-63.jpg");
+        border-radius: 50%;
+
+        h3, h4 {
+          width: 11.1rem;
+          margin: 0 auto;
+          margin-left: 20%;
+        }
+
+        h3 {
+          padding-top: 25%;
+          font-size: 3.1rem;
+        }
+        h4 {
+          font-size: 1.9rem;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.slick-slide {
+  margin-right: 40px;
+}

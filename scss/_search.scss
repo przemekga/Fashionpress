@@ -1,0 +1,52 @@
+.search-bar {
+  background-color: rgba(248, 248, 248, 0.9);
+  height: 45px;
+  margin-top: -45px;
+  color: #df1f26;
+
+  .search {
+    float: left;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+
+    h4, input, button {
+      display: inline-block;
+    }
+
+    h4 {
+      font-family: "Roboto Med";
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      margin-right: 19px;
+    }
+
+    input {
+      height: 29px;
+      border: none;
+      background-color: #c9c9c9;
+    }
+
+    button {
+      height: 29px;
+      width: 32px;
+      font-size: 1.2rem;
+      background-color: #df1f26;
+      color: #eeeeee;
+      border: none;
+    }
+
+  }
+  .disp-icons {
+    float: right;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+
+    span {
+      margin-right: 17px;
+    }
+  }
+}
