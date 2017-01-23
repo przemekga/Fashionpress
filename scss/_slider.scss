@@ -4,6 +4,8 @@
   background-size: cover;
 
   .arr {
+    position: absolute;
+    z-index: 1000;
     border-radius: 100%;
     width: 45px;
     height: 45px;
@@ -17,18 +19,23 @@
   }
 
   .arr-left {
-    float: left;
+    left: 20px;
   }
 
   .arr-right {
-    float: right;
+    right: 20px;
   }
 
   .slider-track {
     margin: 0 auto;
-    width: 69.05%;
+    //width: 69.05%;
     color: #ffffff;
     font-family: "Open Sans Light";
+
+    .slide {
+      margin-left: 15vw;
+      margin-right: 15vw;
+    }
 
     .slider-text {
       width: 40.18%;

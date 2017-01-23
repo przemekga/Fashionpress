@@ -1,0 +1,154 @@
+.side-menu {
+  background-color: #eeeeee;
+  font-family: "Roboto Med";
+  font-size: 10px;
+
+  .wrap {
+    border-right: 1px solid #bebebe;
+    margin-top: 10px;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+
+    h4 {
+      background-color: $main-colour;
+      text-transform: uppercase;
+      color: #eeeeee;
+      font-size: 1.5rem;
+      padding-left: 20px;
+      height: 39px;
+      line-height: 39px;
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        height: 39px;
+        line-height: 39px;
+        border-bottom: 1px solid #dfe0e0;
+        font-size: 1.5rem;
+      }
+
+      a {
+        color: #333333;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      span {
+        color: #e8e681;
+        margin-left: 17px;
+        margin-right: 13px;
+      }
+    }
+  }
+
+  .delivery {
+    margin: 0 auto;
+    margin-top: 3.4rem;
+    width: 80%;
+
+    .grad-v {
+      position: relative;
+      background: #e5e5e5; /* Old browsers */
+      background: -moz-linear-gradient(top,  #e5e5e5 0%, #eeeeee 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #e5e5e5 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #e5e5e5 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+      height: 89px;
+
+      span {
+        position: absolute;
+        top: 40px;
+        left: 35%;
+        font-size: 6rem;
+        color: $main-colour;
+        height: 6rem;
+      }
+    }
+
+    .grad-r {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbdbdb+0,eeeeee+100 */
+      background: #dbdbdb; /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover,  #dbdbdb 0%, #eeeeee 100%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover,  #dbdbdb 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center,  #dbdbdb 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      height: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #909191;
+      font-size: 3.281rem;
+      span {
+        font-family: "Roboto Light";
+        font-size: 3.689rem;
+      }
+    }
+  }
+
+  .twitter-feed {
+    color: $main-colour;
+    margin-top: 64px;
+    h4 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .opinions {
+
+    .arrow_box {
+      position: relative;
+    }
+    .arrow_box:after {
+      top: 100%;
+      left: 20%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+
+      border-top-color: #f6f3f3;
+      border-width: 15px;
+      margin-left: -26px;
+    }
+    h3 {
+      color: $main-colour;
+      text-transform: uppercase;
+    }
+    p {
+      background-color: #f6f3f3;
+      font-family: "PT Sans Italic";
+      font-size: 1.3rem;
+      color: #909191;
+      padding: 29px 27px 32px 24px;
+      margin-right: 29px;
+    }
+
+    .from-user {
+      position: relative;
+    }
+
+    h4 {
+      position: absolute;
+      bottom: 4px;
+      left: 47px;
+      font-size: 1.3rem;
+      display: inline-block;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}

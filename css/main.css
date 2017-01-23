@@ -5820,6 +5820,18 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Roboto Light';
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PT Sans Italic';
+  src: url(../fonts/PTS56F.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
 header {
   font-size: 10px;
   height: 73px;
@@ -5869,6 +5881,8 @@ header {
   background-image: url("../images/Vector-Smart-Object.jpg");
   background-size: cover; }
   .slider .arr {
+    position: absolute;
+    z-index: 1000;
     border-radius: 100%;
     width: 45px;
     height: 45px;
@@ -5879,14 +5893,16 @@ header {
     .slider .arr:hover {
       background-color: rgba(255, 255, 255, 0.2); }
   .slider .arr-left {
-    float: left; }
+    left: 20px; }
   .slider .arr-right {
-    float: right; }
+    right: 20px; }
   .slider .slider-track {
     margin: 0 auto;
-    width: 69.05%;
     color: #ffffff;
     font-family: "Open Sans Light"; }
+    .slider .slider-track .slide {
+      margin-left: 15vw;
+      margin-right: 15vw; }
     .slider .slider-track .slider-text {
       width: 40.18%;
       margin-top: 15%;
@@ -5959,7 +5975,8 @@ header {
   background-color: rgba(248, 248, 248, 0.9);
   height: 45px;
   margin-top: -45px;
-  color: #df1f26; }
+  color: #df1f26;
+  border-bottom: 1px solid #fdfdfd; }
   .search-bar .search {
     float: left;
     height: 45px;
@@ -5974,6 +5991,7 @@ header {
       margin-right: 19px; }
     .search-bar .search input {
       height: 29px;
+      width: 245px;
       border: none;
       background-color: #c9c9c9; }
     .search-bar .search button {
@@ -5991,3 +6009,127 @@ header {
     font-size: 2rem; }
     .search-bar .disp-icons span {
       margin-right: 17px; }
+
+.contents {
+  background-color: #eeeeee; }
+
+.side-menu {
+  background-color: #eeeeee;
+  font-family: "Roboto Med";
+  font-size: 10px; }
+  .side-menu .wrap {
+    border-right: 1px solid #bebebe;
+    margin-top: 10px; }
+  .side-menu nav {
+    padding: 0;
+    margin: 0; }
+    .side-menu nav h4 {
+      background-color: #df1f26;
+      text-transform: uppercase;
+      color: #eeeeee;
+      font-size: 1.5rem;
+      padding-left: 20px;
+      height: 39px;
+      line-height: 39px;
+      margin: 0; }
+    .side-menu nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .side-menu nav ul li {
+        height: 39px;
+        line-height: 39px;
+        border-bottom: 1px solid #dfe0e0;
+        font-size: 1.5rem; }
+      .side-menu nav ul a {
+        color: #333333; }
+        .side-menu nav ul a:hover {
+          text-decoration: none; }
+      .side-menu nav ul span {
+        color: #e8e681;
+        margin-left: 17px;
+        margin-right: 13px; }
+  .side-menu .delivery {
+    margin: 0 auto;
+    margin-top: 3.4rem;
+    width: 80%; }
+    .side-menu .delivery .grad-v {
+      position: relative;
+      background: #e5e5e5;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #e5e5e5 0%, #eeeeee 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #e5e5e5 0%, #eeeeee 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #e5e5e5 0%, #eeeeee 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#eeeeee',GradientType=0 );
+      /* IE6-9 */
+      height: 89px; }
+      .side-menu .delivery .grad-v span {
+        position: absolute;
+        top: 40px;
+        left: 35%;
+        font-size: 6rem;
+        color: #df1f26;
+        height: 6rem; }
+    .side-menu .delivery .grad-r {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbdbdb+0,eeeeee+100 */
+      background: #dbdbdb;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #dbdbdb 0%, #eeeeee 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #dbdbdb 0%, #eeeeee 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #dbdbdb 0%, #eeeeee 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#eeeeee',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */
+      height: 20px; }
+    .side-menu .delivery h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #909191;
+      font-size: 3.281rem; }
+      .side-menu .delivery h2 span {
+        font-family: "Roboto Light";
+        font-size: 3.689rem; }
+  .side-menu .twitter-feed {
+    color: #df1f26;
+    margin-top: 64px; }
+    .side-menu .twitter-feed h4 {
+      font-size: 1.8rem; }
+  .side-menu .opinions .arrow_box {
+    position: relative; }
+  .side-menu .opinions .arrow_box:after {
+    top: 100%;
+    left: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #f6f3f3;
+    border-width: 15px;
+    margin-left: -26px; }
+  .side-menu .opinions h3 {
+    color: #df1f26;
+    text-transform: uppercase; }
+  .side-menu .opinions p {
+    background-color: #f6f3f3;
+    font-family: "PT Sans Italic";
+    font-size: 1.3rem;
+    color: #909191;
+    padding: 29px 27px 32px 24px;
+    margin-right: 29px; }
+  .side-menu .opinions .from-user {
+    position: relative; }
+  .side-menu .opinions h4 {
+    position: absolute;
+    bottom: 4px;
+    left: 47px;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0; }
