@@ -2,10 +2,15 @@
   background-color: #eeeeee;
   font-family: "Roboto Med";
   font-size: 10px;
+  height: 100%;
+  min-height: 100%;
+
 
   .wrap {
     border-right: 1px solid #bebebe;
     margin-top: 10px;
+    height: 100%;
+    min-height: 100%;
   }
 
   nav {
