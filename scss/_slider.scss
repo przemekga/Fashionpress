@@ -93,3 +93,86 @@
 .slick-slide {
   margin-right: 40px;
 }
+
+@media screen and (max-width: 767px) {
+  .slider {
+    height: 100vh;
+    //background-position-x: 500px;
+
+    .arr {
+      display: none!important;
+    }
+
+    .slider-track {
+      margin: 0;
+
+      padding: 0;
+      width: 96vw;
+      color: #ffffff;
+      font-family: "Open Sans Light";
+
+      .slick-track {
+        height: 100vh;
+      }
+
+      .slide {
+        margin-left: 4px;
+        margin-right: 50px;
+        padding-left: 0;
+        //width: 100vw;
+      }
+
+      .slider-text {
+        width: 85vw;
+        margin-top: 15%;
+        display: inline-block;
+        h1 {
+          font-size: 3rem;
+          margin-top: 0;
+        }
+        p {
+          font-size: 1.68rem;
+        }
+      }
+
+      .slider-image {
+        position: relative;
+        float: right;
+        margin-top: 2.5%;
+
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .slider-price {
+          height: 16.2rem;
+          width: 16.2rem;
+          line-height: 18.2rem;
+          position: absolute;
+          right: -6%;
+          bottom: -20%;
+          z-index: 1000;
+          background-image: url("../images/Layer-63.jpg");
+          border-radius: 50%;
+
+          h3, h4 {
+            width: 11.1rem;
+            margin: 0 auto;
+            margin-left: 20%;
+          }
+
+          h3 {
+            padding-top: 25%;
+            font-size: 3.1rem;
+          }
+          h4 {
+            font-size: 1.9rem;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

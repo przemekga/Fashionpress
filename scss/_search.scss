@@ -50,5 +50,40 @@
     span {
       margin-right: 17px;
     }
+
+    i {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .search-bar {
+    margin-top: 0;
+    .search {
+      h4 {
+        display: none;
+      }
+
+      input {
+        height: 29px;
+        width: 150px;
+      }
+    }
+
+    .disp-icons {
+      float: right;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+
+      span {
+        display: none;
+      }
+      i {
+        display: inline-block;
+      }
+    }
   }
 }

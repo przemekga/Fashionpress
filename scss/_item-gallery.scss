@@ -109,3 +109,34 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-width) {
+  .item-gallery {
+    margin-top: 20px;
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    .item {
+      margin-bottom: 50px;
+    }
+
+    .item-exclusive {
+      min-height: 270px;
+      margin-bottom: 5px;
+      .item-wrap {
+        min-height: 270px;
+      }
+
+      .price {
+        width: 20%!important;
+        margin-left: -20px;
+      }
+
+      button {
+        width: 25%!important;
+      }
+    }
+  }
+}

@@ -157,3 +157,13 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-width) {
+  .side-menu {
+    display: none;
+
+    .opinions {
+      margin-bottom: 50px;
+    }
+  }
+}
