@@ -94,10 +94,9 @@
   margin-right: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .slider {
     height: 100vh;
-    //background-position-x: 500px;
 
     .arr {
       display: none!important;
@@ -171,6 +170,127 @@
             font-size: 1.9rem;
             margin-top: 5px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: $tablet-width) {
+  .slider {
+    height: 100vh;
+
+    .arr {
+      display: none!important;
+    }
+
+    .slider-track {
+      margin: 0;
+      padding: 0;
+      width: 96vw;
+
+
+      .slick-track {
+        height: 100vh;
+      }
+
+
+      .slider-text {
+        margin-top: 12%;
+        margin-left: -60px;
+        width: 65vh;
+
+        h1 {
+          font-size: 4rem;
+          margin-top: 0;
+        }
+        p {
+          font-size: 2.8rem;
+        }
+      }
+
+      .slider-image {
+        margin-top: 100px;
+
+
+        .slider-price {
+          height: 18.2rem;
+          width: 18.2rem;
+          right: -6%;
+          bottom: 4%;
+
+          h3, h4 {
+            width: 11.1rem;
+            margin: 0 auto;
+            margin-left: 20%;
+          }
+
+          h3 {
+            padding-top: 25%;
+            font-size: 3.1rem;
+          }
+          h4 {
+            font-size: 1.9rem;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1766px) {
+  .slider {
+
+
+    .slider-track {
+      margin: 0;
+
+      padding: 0;
+      width: 96vw;
+      color: #ffffff;
+      font-family: "Open Sans Light";
+
+      .slick-track {
+        height: 100vh;
+      }
+
+      .slide {
+        margin-left: 4px;
+        margin-right: 50px;
+        padding-left: 0;
+      }
+
+      .slider-text {
+        width: 30vw;
+        margin-top: 5%;
+        margin-left: 15%;
+        display: inline-block;
+        h1 {
+          font-size: 4rem;
+          margin-top: 0;
+        }
+        p {
+          font-size: 2.68rem;
+        }
+      }
+
+      .slider-image {
+        margin-top: 10%;
+        margin-right: 10%;
+        width: 40%;
+
+
+        .slider-price {
+          height: 18.2rem;
+          width: 18.2rem;
+          line-height: 18.2rem;
+          position: absolute;
+          right: -6%;
+          bottom: 5%;
+          z-index: 1000;
+          background-image: url("../images/Layer-63.jpg");
+          border-radius: 50%;
+
         }
       }
     }

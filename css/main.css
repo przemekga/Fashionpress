@@ -5919,12 +5919,12 @@ header {
     header .menu {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       margin-left: 0;
       padding: 0;
       line-height: 100%;
       height: 100%;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       position: absolute;
       top: 70px;
       left: 0px; }
@@ -5933,7 +5933,8 @@ header {
         font-size: 25px; }
       header .menu li {
         height: 50px;
-        padding: 0; }
+        padding: 0;
+        margin-right: 4px; }
         header .menu li a {
           height: 50px; }
   .burger:focus .navigation {
@@ -6006,7 +6007,7 @@ header {
 .slick-slide {
   margin-right: 40px; }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .slider {
     height: 100vh; }
     .slider .arr {
@@ -6059,6 +6060,82 @@ header {
           .slider .slider-track .slider-image .slider-price h4 {
             font-size: 1.9rem;
             margin-top: 5px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider {
+    height: 100vh; }
+    .slider .arr {
+      display: none !important; }
+    .slider .slider-track {
+      margin: 0;
+      padding: 0;
+      width: 96vw; }
+      .slider .slider-track .slick-track {
+        height: 100vh; }
+      .slider .slider-track .slider-text {
+        margin-top: 12%;
+        margin-left: -60px;
+        width: 65vh; }
+        .slider .slider-track .slider-text h1 {
+          font-size: 4rem;
+          margin-top: 0; }
+        .slider .slider-track .slider-text p {
+          font-size: 2.8rem; }
+      .slider .slider-track .slider-image {
+        margin-top: 100px; }
+        .slider .slider-track .slider-image .slider-price {
+          height: 18.2rem;
+          width: 18.2rem;
+          right: -6%;
+          bottom: 4%; }
+          .slider .slider-track .slider-image .slider-price h3, .slider .slider-track .slider-image .slider-price h4 {
+            width: 11.1rem;
+            margin: 0 auto;
+            margin-left: 20%; }
+          .slider .slider-track .slider-image .slider-price h3 {
+            padding-top: 25%;
+            font-size: 3.1rem; }
+          .slider .slider-track .slider-image .slider-price h4 {
+            font-size: 1.9rem;
+            margin-top: 5px; } }
+
+@media (min-width: 992px) and (max-width: 1766px) {
+  .slider .slider-track {
+    margin: 0;
+    padding: 0;
+    width: 96vw;
+    color: #ffffff;
+    font-family: "Open Sans Light"; }
+    .slider .slider-track .slick-track {
+      height: 100vh; }
+    .slider .slider-track .slide {
+      margin-left: 4px;
+      margin-right: 50px;
+      padding-left: 0; }
+    .slider .slider-track .slider-text {
+      width: 30vw;
+      margin-top: 5%;
+      margin-left: 15%;
+      display: inline-block; }
+      .slider .slider-track .slider-text h1 {
+        font-size: 4rem;
+        margin-top: 0; }
+      .slider .slider-track .slider-text p {
+        font-size: 2.68rem; }
+    .slider .slider-track .slider-image {
+      margin-top: 10%;
+      margin-right: 10%;
+      width: 40%; }
+      .slider .slider-track .slider-image .slider-price {
+        height: 18.2rem;
+        width: 18.2rem;
+        line-height: 18.2rem;
+        position: absolute;
+        right: -6%;
+        bottom: 5%;
+        z-index: 1000;
+        background-image: url("../images/Layer-63.jpg");
+        border-radius: 50%; } }
 
 .navigation {
   height: 46px;
@@ -6125,6 +6202,38 @@ header {
           color: #555555;
           text-transform: uppercase;
           font-size: 1.3rem; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navigation {
+    height: 46px;
+    line-height: 46px;
+    background-color: #000000; }
+    .navigation .container {
+      height: 100%;
+      line-height: 46px;
+      display: flex;
+      align-items: center; }
+    .navigation .second-nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      font-family: "Myriad Pro Regular"; }
+      .navigation .second-nav li {
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        padding: 0;
+        margin-left: 3px;
+        margin-right: 26px; }
+        .navigation .second-nav li a {
+          display: flex;
+          justify-content: flex-start;
+          color: #d1d1d1;
+          text-transform: uppercase;
+          font-size: 1.3rem; }
+          .navigation .second-nav li a:hover {
+            text-decoration: none; } }
 
 .search-bar {
   background-color: rgba(248, 248, 248, 0.9);
@@ -6321,6 +6430,12 @@ header {
     .side-menu .opinions {
       margin-bottom: 50px; } }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .side-menu .delivery h2 {
+    font-size: 2rem; }
+    .side-menu .delivery h2 span {
+      font-size: 3rem; } }
+
 .item-gallery {
   margin-top: 2px; }
   .item-gallery h3 {
@@ -6408,7 +6523,10 @@ header {
     .item-gallery h3 {
       font-size: 2.5rem; }
     .item-gallery .item {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      min-height: 270px; }
+    .item-gallery .item-wrap {
+      min-height: 270px; }
     .item-gallery .item-exclusive {
       min-height: 270px;
       margin-bottom: 5px; }
@@ -6419,6 +6537,31 @@ header {
         margin-left: -20px; }
       .item-gallery .item-exclusive button {
         width: 25% !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .item-gallery {
+    margin-top: 20px; }
+    .item-gallery h3 {
+      font-size: 2.5rem; }
+    .item-gallery .item {
+      margin-bottom: 10px;
+      min-height: 260px; }
+      .item-gallery .item .item-wrap {
+        min-height: 260px; }
+    .item-gallery .item-exclusive {
+      min-height: 270px;
+      margin-bottom: 5px; }
+      .item-gallery .item-exclusive .item-wrap {
+        min-height: 270px; }
+      .item-gallery .item-exclusive .price {
+        width: 20% !important;
+        margin-left: -20px; }
+      .item-gallery .item-exclusive button {
+        width: 25% !important; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .item-gallery .item {
+    margin-bottom: 30px; } }
 
 footer {
   background-color: #d3d3d8; }
